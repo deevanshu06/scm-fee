@@ -1,0 +1,75 @@
+body{
+    background-image: url(https://img.pikbest.com/wp/202343/drawing-watercolor-background-abstract-light-brown-texture_9986568.jpg!bw700);
+    background-size: cover; 
+}
+.cart-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+.cart-item img {
+    width: 100px;
+    height: 100px;
+}
+.cart-item p {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+
+
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-decoration:underline;
+    color: rgb(16, 25, 33);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.cart-item span {
+    font-size: 16px;
+    color: black;
+}
+.delete-btn {
+    background-color: darkorange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-color: darkred;
+}
+.total {
+    font-size: 50px;
+    text-decoration: overline;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-right: 40px;
+    color: black;
+}
+p{
+    font-size: 50px;
+    color: aliceblue;
+}
+a{
+    
+    text-decoration: none;
+    background-color: rgb(16, 25, 33);
+    padding: 8px;
+    color: aliceblue;
+    font-size: 30px;
+    
+}
+a:hover{
+    transform: scale(1.1);
+}
+.container{
+    display: flex;
+    align-items: center;
+   
+}

@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://img.pikbest.com/wp/202343/drawing-watercolor-background-abstract-light-brown-texture_9986568.jpg!bw700);
+  background-size: cover;
+  color: #333;
+}
+
+
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.offers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+.offer :hover{
+    transform: scale(1.4);
+}
+.offer-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.offer-card :hover{
+    transform: scale(1.1);
+}
+
+.offer-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.offer-card h2 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.offer-card p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.order-btn {
+  background-color: #001F3F;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  background-color: #001F3F;
+}

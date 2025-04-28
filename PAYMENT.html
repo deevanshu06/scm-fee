@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+   <style>body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://img.pikbest.com/wp/202343/drawing-watercolor-background-abstract-light-brown-texture_9986568.jpg!bw700);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.payment-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background:rgb(238, 226, 202);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #110808;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.payment-option:hover {
+    background-color: #d7c5a7;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    border: 2px solid #2680e0;
+    background-color: #e7f3ff;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 5px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    background: #f8a826;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background: #d7c3a2;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e7f3ff;
+    color: #007bff;
+    text-align: center;
+    border-radius: 8px;
+    display: none;
+}
+
+.error {
+    background-color: #ffdddd;
+    color: #d9534f;
+}</style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Select Your Payment Method</h1>
+        <form id="paymentForm">
+            
+            <div class="payment-option">
+                <input type="radio" id="cod" name="payment_method" value="Cash on Delivery" required>
+                <label for="cod">
+                    <span class="icon">💵</span>
+                    Cash on Delivery
+                </label>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" id="card" name="payment_method" value="Credit/Debit Card">
+                <label for="card">
+                    <span class="icon">💳</span>
+                    Credit/Debit Card
+                </label>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" id="paypal" name="payment_method" value="PayPal">
+                <label for="paypal">
+                    <img src="https://etimg.etb2bimg.com/thumb/msid-113378266,imgsize-6462,width-1200,height=765,overlay-etbfsi/fintech/how-phonepe-topped-global-payments-league-ahead-of-paypal-stripe.jpg" height="40px " width="40px">
+                    PhonePe
+                </label>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" id="gpay" name="payment_method" value="Google Pay">
+                <label for="gpay">
+                    <img src="https://animationvisarts.com/wp-content/uploads/2023/11/Frame-43-1.png" height="40px " width="40px">
+                    Google Pay
+                </label>
+            </div>
+
+
+            <button type="button" id="submitBtn" class="submit-btn">Proceed to Pay</button>
+        </form>
+        <div id="selectedMethod" class="result"></div>
+        <div id="paymentStatus" class="result"></div>
+    </div>
+
+    
+  
+</body>
+<script src="payment.js"></script>
+</html>

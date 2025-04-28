@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fffdeb;
+}
+.upperpart{
+    height:85px;
+    background-color:#412b02;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+
+#ourlogo{
+    height: 80px;
+    
+    margin-left: 20px;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   
+}
+nav li{
+    /* list-style-type: none; */
+    display: inline-block;
+    padding: 16px;
+}
+
+.navbarbutton{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family:"Spicy Rice", serif;
+    text-transform: uppercase;
+    border-bottom-style:solid;
+    border-radius: 10px;
+}
+nav a:hover{
+    color:rgb(228, 145, 0);
+    background-color: white;
+
+}
+.button{
+  border-radius: 10px;
+    color:white;
+    width: 100px;
+    height: 30px;
+    font-size:20px ;
+    font-family:cursive ;
+    font-weight:bolder ;
+    margin-left: 300px;
+    margin-right:20px;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: white;
+    color:rgb(228, 145, 0);
+}
+i{
+    font-size:30px;
+    color: white;
+}
+@media (max-width:1212px) {
+     nav ul{
+        display: none;
+    }
+    
+}
+@media (min-width:1212px) {
+    i{
+        display: none;
+    }
+}
+.backtohomepage{
+    /* background-color: black; */
+    padding-top: 60px;
+    padding-left: 30px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.backtohomepage li{
+    display:inline-block;
+    font-size: 25px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+.backtohome{
+    text-decoration: none;
+    color:black;
+    
+}
+.backtohomepage a:hover{
+    color:rgb(228, 145, 0); 
+}
+.contactpresent{
+    text-decoration: none;
+    color: rgb(228, 145, 0);
+  
+}
+.thunderlogo{
+    height:20px;
+    /* position:relative;
+    
+    left:-9.3%; */   
+}
+.contactphoto{
+    height: 180px;
+    position: absolute;
+    left: 80%;
+    top: 16%;
+}
+.maincontainer h1{
+    font-size: 4vw;
+    margin-top:-45px;
+    text-transform: uppercase;
+    font-family: "DM Serif Text", serif;
+    text-align: center;
+    font-weight:4000;
+
+}
+.maincontainer>p{
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height:30px;
+    text-align: center;
+}
+@media (max-width:600px) {
+    .maincontainer h1{
+        font-size: 30px;
+    }
+    .maincontainer p{
+        font-size: 20px;
+        
+    }
+}
+.maincontainer2{
+    display: flex;
+    width: 100%;
+    /* background-color: #412b02; */
+    height: 400px;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+@media(max-width:600px){
+    .maincontainer2{
+        flex-wrap: wrap;
+    }
+}
+aside{
+    background-color:#1a2037;
+    height: 450px;
+    width: 38%;
+    margin-right: 80px;
+    }
+aside h2{
+    padding: 20px 0px 0px 20px;
+    font-size: 22px;
+    font-family: "DM Serif Text", serif;
+    color: aliceblue;
+}
+aside>p{
+    padding-left: 20px;
+    padding-right: 60px;
+    font-size:21px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 30px;
+    
+}
+
+form{
+    /* background-color: rgb(172, 172, 172); */
+    height:750px ;
+    width:100%; 
+    padding: 20px 30px 0px 40px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.formdiv>label{
+    font-size: 18px;
+    font-family: "DM Serif Text", serif;
+}
+.actualinput{
+    height: 60px;
+    width:29vw;
+    padding-left: 20px;
+    font-size:17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: #1a2037;
+    border-radius: 2px;
+    border-width: 2px;
+}
+select{
+    height: 60px;
+    width: 450px;
+    padding-left:20px;
+    font-size:17px;
+    border-color: #1a2037;
+    border-radius: 2px;
+    border-width: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.inputmessage{
+    height: 300px;
+    width: 60vw;
+    padding-left: 20px;
+    font-size:15px;
+    border-color: #1a2037;
+    border-radius: 2px;
+    border-width: 2px; 
+}
+.inputbutton{
+    color: #fffdeb;
+    background-color: #1a2037;
+    height: 65px;
+    width: 130px;
+    margin-left:690PX;
+    margin-top: 20px;
+    font-size: 35px;
+    font-family:"DM Serif Text", serif ;
+    border-radius: 20px;
+   
+}
+.inputbutton:hover{color:rgb(228, 145, 0);
+background-color: white;}

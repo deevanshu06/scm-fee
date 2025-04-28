@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Offers - Food Ordering</title>
+  <link rel="stylesheet" href="offer.css">
+  <script>
+    function orderNow(item) {
+  alert('You have selected the item. Your order has been added to the cart.');
+}
+
+  </script>
+</head>
+<body>
+  
+    <h1>DAILY OFFERS</h1>
+
+
+  <section class="offers">
+    <div class="offer-card">
+      <img src="https://img.buzzfeed.com/video-api-prod/assets/53125c5621bf480d8ae4f02b1cf4ea78/BFV8045_BlackBeanBurgers-Thumb1080B.jpg">
+      <h2>Special Burger Combo (two black bean burgers.)</h2>
+      <p>Enjoy a burger combo at just Rs.500 today!</p>
+      <button class="order-btn" onclick="orderNow('Burger Combo')">Order Now</button>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://www.simplyrecipes.com/thmb/0pVK4YpDJNoXPEAchI_OSDE0UZQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Chicago-Deep-Dish-Pizza-LEAD-5-f8c04d3d77b24e479bbb1502758a5ed1.jpg" alt="Chicago Style." alt="Pizza Offer" HEIGHT="250" WIDTH="100">
+      <h2>Chicago Pizza</h2>
+      <p>Buy 1 Get 1 Free today!</p>
+      <button class="order-btn" onclick="orderNow('Cheese Pizza')">Order Now</button>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://www.whiskaffair.com/wp-content/uploads/2020/02/Chilli-Garlic-Noodles-2-3.jpg">
+      <h2>Garlic Noodles</h2>
+      <p>Get the Delicious Garlic Noodles at your Doorstep @100 </p>
+      <button class="order-btn" onclick="orderNow('Creamy Alfredo Pasta')">Order Now</button>
+    </div>
+  </section>
+
+  <script src="offer.js"></script>
+</body>
+</html>

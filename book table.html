@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="book table.css">
+  <script>
+    function showBookingAlert(event) {
+      event.preventDefault();
+      var firstName = document.getElementById('firstName').value;
+      var lastName = document.getElementById('lastName').value;
+      alert(' Welcome, ' + firstName + ' ' + lastName + ' Your Table booked successfully!');
+    }
+  </script>
+</head>
+<body>
+<div id="form">
+    <form onsubmit="showBookingAlert(event)">
+   <h1>Book Your Table</h1>
+   
+   <h4>Name</h4>
+   <input type="text" id="firstName" placeholder="First Name" required>
+   <input type="text" id="lastName" placeholder="Last Name" required><br>
+   
+   <h4>E-mail</h4>
+   <input type="email" placeholder="E-Mail" pattern="[a-z0-9.]+@[a-z0-9.]+[a-z]" required><br>
+   
+   <h4>Date</h4>
+   <input type="date" placeholder="DD/MM/YYYY" required><br>
+   
+   <h4>Time</h4>
+   <input type="time" placeholder="--:-- --" required><br><br>
+   
+   <input id="submit" type="submit" value="Book Table">
+   <input id="reset" type="reset" value="Reset">
+ </form>
+</div>
+<div class="home">
+  <a href="cafeculture.html">HOME---></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: rgb(246, 239, 229);
+}
+.upperpart{
+    height:85px;
+    background-color:#412b02;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+
+#ourlogo{
+    height: 80px;
+    
+    margin-left: 20px;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 16px;
+}
+.homecolor{
+    color: #0a0e54;
+}
+.navbarbutton{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family:"Spicy Rice", serif;
+    text-transform: uppercase;
+    border-bottom-style:solid;
+    border-radius: 10px;
+}
+a:hover{
+    color:rgb(228, 145, 0);
+    background-color: white;
+
+}
+.button{
+  border-radius: 10px;
+    color:white;
+    width: 100px;
+    height: 30px;
+    font-size:20px ;
+    font-family:cursive ;
+    font-weight:bolder ;
+    margin-left: 300px;
+    margin-right:20px;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: white;
+    color:rgb(228, 145, 0);
+}
+i{
+    font-size:30px;
+    color: white;
+    
+}
+.img1{
+    height: 700px;
+    width: 100%;
+}
+.img-text{
+    position:absolute;
+    top:27%;
+    margin-left: 15vw;
+    color:black;
+    border-radius: 30px;
+}
+.img-text2{
+    position:absolute;
+    top:37%;
+    margin-left: 10vw;
+    color:black;
+    border-radius: 45px;
+    animation-name: text2; 
+    animation-duration: 2s;
+    
+}
+@keyframes text2 {
+    from{
+        bottom:70%;
+    }
+    to{
+        top: 37%;
+    }
+    
+}
+
+h4{
+    text-transform:uppercase ;
+     font-size:3.5vw;
+     font-weight: 900;
+     font-style:bold;
+     
+    
+}
+.img-text2 p{
+    font-size:90px;
+    font-family:lucida handwriting;
+    text-shadow:3px 2px black;
+}
+.slogan{
+    position:absolute;
+    top: 65%;
+   margin-left: 53vw;
+ 
+    border-bottom-right-radius: 90px;
+    border-top-right-radius: 90px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    animation-name:slogan;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1ms;
+
+}
+.slogan p{
+    font-size: 30px;
+    
+    padding: 27px;
+    font-family:lucida handwriting;
+    font-weight: bolder;
+    background-color: rgba(31, 2, 2, 0.408);
+    border-radius: 100px;
+}
+#screenimg{
+    position: absolute;
+    top: 15%;
+    height: 250px;
+    margin-left: 970px;
+}
+#food-logo{
+    height: 140px;
+    position: absolute;
+    top: 72%;
+    margin-left:1;
+    z-index: 1;
+    animation-name: foodlogo;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: s;
+}
+@keyframes foodlogo {
+    from{
+        left: 0;
+    }
+    to{
+        left: 45%;
+    }
+    
+}
+@keyframes slogan {
+    from{
+        right: 0;
+    }
+    to{
+        right: 25%;
+    }
+    
+}
+
+.photos{
+    margin-top: 100px;
+}
+.photos img{
+    height: 350px;
+    width: 375px;
+    border-radius: 150px;
+}
+#image1{
+    position:relative;
+    animation-name: anime1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+}
+/* @keyframes anime1 {
+    from{
+        left: 0;
+    }
+    to{
+        left: 75%;
+    }
+}
+#image2{
+    position:relative;
+    animation-name: anime2;
+    animation-duration: 3s;
+    
+}
+@keyframes anime2 {
+    from{
+       right: 50%;
+    }
+    to{
+        right: 0;
+    }
+}
+#image3{
+    position:relative;
+    animation-name: anime3;
+    animation-duration: 3s;
+    
+}
+@keyframes anime3 {
+    from{
+        left: 50%;
+    }
+    to{
+        left:0%;
+    }
+}
+#image4{
+    position:relative;
+    animation-name: anime4;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes anime4 {
+    from{
+        right: 0;
+    }
+    to{
+        right: 75%;
+    }
+} */
+
+
+.spotlight-container{
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.spotlight-outerleft{
+    
+    height: 100%;
+    width: 50%;
+    padding: 110px 30PX;
+
+}
+.spotlight-outerright{
+    padding: 110px 30PX;
+    height: 100%;
+    width: 50%;
+}
+.left-spotlight{
+    background-color: #97caea;
+    height: 630px;
+    padding:50px 250px 0px 60px;
+    
+    
+}
+.right-spotlight{
+    color:aliceblue;
+    background-color: #0a0e54;
+    height: 630px;
+    padding: 50px 250px 0px 60px;
+}
+.spotlight-subtitle{
+    
+   font-size: 30px;
+   text-transform: uppercase;
+   font-family:"Spicy Rice", serif;
+   
+}
+.spotlight-title{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+.spotlight-text{
+    font-size:25px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    padding-top: 15px;
+
+}
+.spotlight-logo1{
+    height: 250px;
+    position:absolute;
+    top: 158%;
+    margin-left: 470px;
+}
+.spotlight-logo2{
+    height: 260px;
+    position:absolute;
+    top: 158%;
+    margin-left: 276px;
+   
+    
+}
+.spotlight-link{
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 45px;
+   
+}
+.arrow{
+    position: absolute;
+    top: 244%;
+    margin-left: 300px;
+    background-color:white;
+    border-radius: 70px;
+}
+.arrow2{
+    position: absolute;
+    top: 233%;
+    margin-left:1000px ;
+    background-color: white;
+    border-radius:70px;
+}
+.spotlight-link a {
+    text-decoration: none;
+    color: black;
+    
+}
+.spotlight-link a:hover{
+    color: #e59603;
+}
+#spotlight-rightlink{
+    color: aliceblue;
+    
+}
+#spotlight-rightlink:hover{
+    color: #e59603;
+}
+main{
+    margin-bottom:150px;
+}
+.footer{
+    background-color: #1d1f27;
+}
+.ourlogo2{
+    display: flex;
+    justify-content: center;
+}
+.lastimg{
+    width: 100%;
+    padding-top: 100px;
+}
+
+
+.footer-barcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-left: 40px;
+    color:rgb(6, 6, 61)
+}
+.footer-policy-links{
+    
+    padding-right: 100px;
+    list-style-type: none;
+    display:flex;
+    
+}
+.footer-policy-links li{
+    padding: 16px;
+    color:rgb(10, 10, 86); 
+}
+.footer-policy-links li a{
+    color: #0a0e54;
+}
+.footer-policy-links li a:hover{
+    color: #e59603;
+}
+@media (max-width:1212px) {
+    ul{
+        display: none;
+    }
+    
+}
+@media (min-width:1212px) {
+    i{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    .img1{
+        height:610px;
+    }
+    h4{
+        font-size: 40px;
+        text-align: center;
+        margin-left: -25px;
+        margin-top:-60px;
+    }
+    .img-text2 p{
+        font-size: 60px;
+        margin-left:50px;
+        margin-top:-60px; 
+    }
+    .slogan{
+        margin-left:20px;
+        margin-top:-90px;
+    }
+    .slogan p{
+        font-size:20px;
+    }
+    #food-logo{
+        display: none;
+    }
+    .photos img{
+        width:325px;
+        height: 250px;
+        border-radius: 70px;
+        margin-left: 35px;
+    }
+    .photos{
+        height: 350px;
+        width: 100vw;
+        margin-top: -40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow-x:auto;
+    }
+    .slogan{
+        animation-name: none;
+    }
+    .scroll-bar{
+        margin-left:10px;
+        display: flex;
+        overflow: auto;
+        flex-direction: row;
+    }
+    .spotlight-container{
+        display: flex;
+        flex-direction: column;
+        margin-top:-140px;
+    }
+    .spotlight-outerleft{
+        padding: 110px 10px;
+    }
+    .left-spotlight{
+        padding: 30px 315px 0px 60px;
+    }
+    .upperpart{
+        width: 100vw;
+    }
+    
+
+}

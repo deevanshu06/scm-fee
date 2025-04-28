@@ -1,0 +1,192 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    background-color: rgb(246, 239, 229);
+    color: #333;
+    line-height: 1.6;
+}
+
+.upperpart{
+    height:85px;
+    background-color:#412b02;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+
+#ourlogo{
+    height: 80px;
+    
+    margin-left: 20px;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 16px;
+}
+.navbarbutton{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family:"Spicy Rice", serif;
+    text-transform: uppercase;
+    border-bottom-style:solid;
+    border-radius: 10px;
+}
+a:hover{
+    color:rgb(228, 145, 0);
+    background-color: white;
+
+}
+.button{
+  border-radius: 10px;
+    color:white;
+    width: 100px;
+    height: 30px;
+    font-size:20px ;
+    font-family:cursive ;
+    font-weight:bolder ;
+    margin-left: 300px;
+    margin-right:20px;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: white;
+    color:rgb(228, 145, 0);
+}
+i{
+    font-size:30px;
+    color: white;
+    
+}
+@media (min-width:1212px) {
+    i{
+        display: none;
+    }
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    text-align: center;
+    background-color: #0b1559; /* Light brown */
+    color: rgb(246, 246, 246);
+    padding: 50px 20px;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    width: 700px;
+    margin-left: 230px;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: "DM Serif Text", serif;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.help-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:18px;
+}
+
+.help-topic {
+    flex: 1 1 30%;
+    background-color: #97caea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.help-topic h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.help-topic p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.help-topic ul {
+    list-style: none;
+}
+
+.help-topic li {
+    margin-bottom: 10px;
+}
+
+.contact-support {
+    text-align: center;
+    background-color: #6f4f37;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.contact-support h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-support button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #e8a87c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-support button:hover {
+    background-color: #6f4f37;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .help-content {
+        flex-direction: column;
+    }
+
+    .help-topic {
+        flex: 1 1 100%;
+    }
+}

@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+    body{
+        background-color: rgb(246, 239, 229);
+    }
+    .upperpart{
+        height:85px;
+        background-color:#412b02;
+        position: fixed;
+        width: 100%;
+        z-index: 200;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    
+    /* nav{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+       
+    } */
+    nav li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 16px;
+    }
+    .navbarbutton{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        font-family:"Spicy Rice", serif;
+        text-transform: uppercase;
+        border-bottom-style:solid;
+        border-radius: 10px;
+    }
+    a:hover{
+        color:rgb(228, 145, 0);
+        background-color: white;
+    
+    }
+    .backtohomepage{
+    /* background-color: black; */
+    padding-top: 85px;
+    padding-left: 0px;
+    height: 200px;
+    display: flex;
+    margin-left:30px;
+    
+    
+}
+.backtohomepage li{
+    display:inline-block;
+    font-size: 25px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+.backtohome{
+    text-decoration: none;
+    color:rgb(245, 235, 235);
+    margin-right: -0.2px;
+    
+}
+.backtohomepage a:hover{
+    color:rgb(228, 145, 0); 
+}
+.contactpresent{
+    text-decoration: none;
+    color: rgb(228, 145, 0);
+  
+}
+.thunderlogo{
+    height:20px;
+    /* position:relative;
+    
+    left:-9.3%; */   
+}
+.container {
+    /* display: flex; */
+}
+
+.main-content {
+    /* flex: 1; */
+    padding-top: 150px;
+    background-image: url(https://img.pikbest.com/wp/202343/drawing-watercolor-background-abstract-light-brown-texture_9986568.jpg!bw700);
+    background-size: 1000px;
+   
+}
+/* 
+header {
+    display: flex;
+
+    margin-bottom: 30px;
+}
+
+header input[type="text"] {
+    padding: 12px;
+    width: 200px;
+    margin-right:200px ;
+}
+
+header button {
+    padding: 12px;
+    margin-right: 10px;
+    background-color:gold;
+    border: solid;
+    cursor: pointer;
+} */
+.last-buttons{
+    margin-right: 100px;
+}
+
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 80px;
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+color: rgb(33, 13, 13);
+}
+
+.food-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: zoomIn 2s ease-out;
+    justify-content: center;
+
+}
+.food-menu :hover{
+    transform: scale(1.1); 
+}
+
+
+.food-card {
+    width: 274px;
+    padding: 10px;
+    height: 350px;
+    background-color: rgb(238, 225, 197);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+
+}
+
+.food-card img {
+    width: 100%;
+    height: 230px;
+    border-radius: 8px;
+}
+
+.food-card p {
+    font-size: 21px;
+    margin: 10px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.food-card span {
+    color: #3a3232;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+color: rgb(246, 251, 255);
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: rgb(128, 133, 135);
+    border-color: gainsboro;
+    margin-right: 30px;
+   
+    
+}
+#last-buttons{
+    margin-right: 40px;
+}
+.add-to-cart{
+    margin-top:10px;
+    height: 35px;
+    width:120px;
+    background-color: black;
+    color: aliceblue;
+}

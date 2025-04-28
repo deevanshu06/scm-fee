@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Moul&family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="upperpart">
+            <nav>
+                <img id="ourlogo" src="logo1.png" alt="">
+                <ul>
+                    <li><a class="navbarbutton" href="cafeculture.html">Home</a></li>
+                    <li><a class="navbarbutton" href="about2.html">About</a></li>
+                    <li><a class="navbarbutton" href="food menu.html">cafe menu</a></li>
+                    <li><a class="navbarbutton" href="book table.html">book table</a></li>
+                    <a class="button" href="sign in.html">SIGN IN</a>
+                </ul>
+                <i class="ri-menu-line"></i>
+            </nav>
+            <p></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="backtohomepage">
+            <ul>
+                <li> <a class="backtohome" href="cafeculture.html">Home</a></li>
+                <li><img class="thunderlogo" src="thunder.png" alt=""></li>
+                <li> <a class="contactpresent" href="">contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="maincontainer">
+            <img class="contactphoto" src="contactphoto.png" alt="">
+            <h1>contact</h1>
+            <p>
+                Our outstanding support staff is here to help answer your questions.<br>
+                Our offices are open Monday-Friday, 8am-4pm CT.
+            </p>
+            <div class="maincontainer2">
+                <aside>
+                    <h2> PHONE</h2>
+                    <p>we are available from Monday-Friday,8am-4pm<br>Please call us at-9825**</p>
+                    <h2> EMAIL</h2>
+                    <p>Email us at<br>@cafeculture.com</p>
+                    <h2>ORDER RELATED ENQUIRY</h2>
+                    <p>Email us at<br>@cafeculture.com</p>
+                </aside>
+                <form id="contactForm">
+                    <div class="formdiv">
+                        <label for="inputlabel">NAME</label><br>
+                        <input class="actualinput" id="username" type="text" placeholder="Name" minlength="3" maxlength="12" required>
+                    </div>
+                    <div class="formdiv">
+                        <label for="inputlabel">EMAIL ADDRESS</label><br>
+                        <input class="actualinput" type="email" placeholder="Email Address" pattern="[a-z0-9.]+@[a-z0-9.]+[a-z]" required>
+                    </div>
+                    <div class="formdiv">
+                        <label for="inputlabel">PHONE NUMBER</label><br>
+                        <input class="actualinput" type="text" placeholder="Phone number" maxlength="10" required>
+                    </div>
+                    <div class="formdiv">
+                        <label for="inputlabel">COMPANY</label><br>
+                        <input class="actualinput" type="text" placeholder="Company" required>
+                    </div>
+                    <div class="formdiv">
+                        <label for="inputlabel">REASON FOR CONTACT</label><BR>
+                        <select>
+                            <option>General Inquiry</option>
+                            <option>Sales Support</option>
+                            <option>Wholesale Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="formdiv">
+                        <label for="inputlabel">MESSAGE*</label><br>
+                        <input class="inputmessage" type="text" placeholder="Message" maxlength="100" required>
+                    </div>
+                    <input class="inputbutton" type="submit" value="SEND">
+                </form>
+            </div>    
+        </div>
+    </main>
+
+    
+    <script>
+        
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            
+            event.preventDefault();
+
+        
+            const username = document.getElementById('username').value;
+
+            
+            alert(`Welcome ${username}, your credentials have been successfully submitted!`);
+        });
+    </script>
+
+</body>
+</html>
